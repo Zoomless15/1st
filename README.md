@@ -1,0 +1,1 @@
+It's my first project ever, after 1 month of watching tutorials, and slowly increasing my javascript, css and html knowledge. Hopefully my next project will be much better. I know this one isn't perfect
