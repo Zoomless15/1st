@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Yurei</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Yurei:</h2>
+          <p>EVIDENCE: Ghost Orbs, Thermometer, DOTS</p>
+          <p>Hunt Threshold: 50%</p>
+          <p>Speed:  1.7m/s (Normal increase) </p>
+          <p>Hidden Ability:  Ability that reduces the Sanity of nearby players (Door Shut)
+          More likely to do Mistball Ghost Events
+          </p>
+          <p>Give Away: <a class="link-color" href="https://www.youtube.com/watch?v=zgVOekUoZ0E&t=66s&ab_channel=Psycho">
+            The Yurei Door Close: He will touch a door and a second later close it fully (2 sounds) /
+            Everyone's sanity is oddly low</a></p>
+          <p> Exclude: -</p>
+          <p>Hunt:Note when you hear a door touch, with a suspiciously delayed door closing sound outside of Ghost Events and Hunts
+          Smudging the ghost will trap it in it's room for the entire Smudge Duration (90s)</p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            Yūrei are Japanese folklore ghosts known for haunting a specific location at a specific time (generally corresponding to their time of death). They are famous for having an appearance which strikes fear into their foes, often resulting in self-mutilation or suicide.
+            The Yurei is commonly regarded as a very difficult ghost to identify, along with the Goryo, due to its lack of hunting abilities and/or lack of recognizable abilities.
+            The Yurei, though regarded as having a "stronger effect on people's sanity", does not increase the passive sanity drain of players, nor does it have an increased drain from pseudo-line of sight like with the Phantom. Furthermore, the Jinn's ability to drain 25% sanity rather than the Yurei's meager 15% while the Jinn has other abilities ironically makes the Yurei weak when juxtaposed to other ghosts.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „A Yurei is a ghost that has returned to the physical world, usually for the purpose of revenge or hatred.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Yurei</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Yurei.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">May randomly shut a door and deduct nearby players' sanity</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Will be temporarily confined to its room after smudging</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/Orb.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/Thermo.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="../phasmo-js/1-phasmo-project-java.js"></script>
+<script src="../phasmo-js/1-phasmo-ghosts-page.js"></script>
+  </body>
+</html>

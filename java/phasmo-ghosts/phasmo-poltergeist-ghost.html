@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Poltergeist</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Poltergeist:</h2>
+          <p>EVIDENCE:Spirit box, UV, Writing</p>
+          <p>Hunt Threshold: 50%</p>
+          <p>Speed: 1.7m/s (NORMAL Speed)</p>
+          <p>Hidden Ability: Can throw more than one object occasionally
+          Can throw objects further than other ghosts.</p>
+          <p>Give Away: Multithrow </p>
+          <p> Exclude: -</p>
+          <p>Hunt:
+            Touches everything constantly somehow.
+            During Hunts it throws most of items it comes in contact with.
+            (consider kiting through Writing Book)
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            A poltergeist is a type of ghost known for causing physical disturbances, such as loud noises and objects being moved or destroyed. Although claims of supernaturally-caused disturbances date back to the 1st century, references to poltergeists specifically became more common in the early 1600s. The word poltergeist comes from the German language words poltern ("to make sound" and "to rumble") and Geist ("ghost" and "spirit"), and the term itself translates as "noisy ghost", "rumble-ghost" or a "loud spirit". A synonym coined by René Sudre is thorybism, from Greek thorybein ("to make noise or uproar; throw into confusion").
+            <p>The Poltergeist will occasionally use an ability that allows it to throw multiple nearby items at once, creating an EMF level 2 reading (the thrown items themselves generate EMF 3). This will decrease the sanity of all nearby players in line-of-sight with the EMF 2 location by a percentage equal to the number of items thrown multiplied by 2. The ability and associated sanity drain works even when the lights are turned on.</p>
+            <p>If there are no items near a Poltergeist, it is unable to use its ability. This does not influence its behaviour towards initiating a hunt.</p>
+          </p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „One of the most famous ghosts, the Poltergeist. Known to manipulate objects around it to spread fear into its victims.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Poltergeist</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Phantom_p1.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">Sanity decrease stacks up during multithrow interactions</div>
+          </div>
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">Can throw multiple objects at once
+              Can throw a single object farther than other types</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Ineffective in empty rooms with no throwables</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/box.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/book.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/Fingerprints.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  <script src="../phasmo-js/1-phasmo-ghosts-page.js"></script>
+  </body>
+</html>

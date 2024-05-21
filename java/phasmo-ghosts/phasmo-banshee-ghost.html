@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Banshee</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Banshee:</h2>
+          <p>EVIDENCE:Fingerprints, Ghost Orb, Dots</p>
+          <p>Hunt Threshold 50% (only target sanity)</p>
+          <p>Speed: 1.7m/s (NORMAL Speed)</p>
+          <p>Hidden Ability: Prefers Singing Ghost Events
+          </p>
+          <p>Give Away: MP:Ignores closer players during a Hunt and focuses on the selected target <a class="link-color" href="https://www.youtube.com/watch?t=4&v=TXL7rM3nndI&feature=youtu.be">Banshee Scream on Paramic</a></p>
+          <p> Exclude: -</p>
+          <p>
+            Hunt: Banshee will pic a random target, and only go for them during a hunt. It will also only check the target's Sanity for the Hunt threshhold.
+            If it's target is outside the Investigation Area, the Banshee will act like a normal ghost.
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            The Banshee is a female spirit in Irish folklore who heralds the death of a family member, usually by wailing or shrieking. A Banshee translates to "woman of the fairy mound" or "fairy woman" in its roots from Ireland. In Phasmophobia, Banshees can be either female or male, as the ghost's gender is randomly chosen.</p>
+            <p><audio controls>
+              <source src="../phasmo-project-photos/scream.ogg" type="audio/ogg">
+            </audio></p>
+          </p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „The singing siren, known for attracting its victims through song. It has been known to single out its prey before making a killing blow.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Banshee</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/banshee.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">Focuses on the same player until that player is killed or has left the game</div>
+          </div>
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">Can produce a unique screech on the parabolic microphone
+              Performs singing ghost events more often than other ghost types
+              Frequently roams to target player outside of hunts</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Cannot kill players other than the target if the target is inside</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/Fingerprints.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/Orb.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  </body>
+</html>

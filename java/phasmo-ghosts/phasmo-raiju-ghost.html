@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Raiju</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Raiju:</h2>
+          <p>EVIDENCE: EMF5, Ghost Orb, DOTS</p>
+          <p>Hunt Threshold: 50% (65% when nearby electrical equipment) </p>
+          <p>Speed:1.7m/s or 2.5/s
+            (nearby electronic equipment)</p>
+          <p>Hidden Ability: Faster near electronics
+          </p>
+          <p>Give Away: "Hunt: Ghost Speed increases and decreases during the hunt (when nearby active electronic devices)</p>
+          <p> Exclude: -</p>
+          <p>
+            Ability :TWhen electrical devices (player items) are in it's ghost room, the hunt threshold is increased.
+            Hunt: Being near active electric devices (brought by players) will speed the ghost up. Entering and leaving the vicinity of these devices will sound as if the ghost speed changes dynamically.  
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            In Japanese mythology, Raijus (雷獣, or "thunder beasts") are divine creatures most commonly depicted as a canine animal surrounded by lightning. Raijus are thought to be living in the sky, descending onto earth during thunderstorms by riding a lightning bolt to cause mayhem and destruction. As such, lightning strikes were often interpreted as the passage of a Raiju or divine punishment in ancient Japan.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „A Raiju is a demon that thrives on electrical current. While generally calm, they can become agitated when overwhelmed with power.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Raiju</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Raiju.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">
+              Active electronics boost its speed during hunts</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Disrupts electronics from further away when manifesting</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/emf.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/Orb.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  <script src="../phasmo-js/1-phasmo-ghosts-page.js"></script>
+  </body>
+</html>

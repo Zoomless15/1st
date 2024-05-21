@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Thaye</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Thaye:</h2>
+          <p>EVIDENCE: Ghost Orb, Ghost Writing, DOTS</p>
+          <p>Hunt Threshold:75% - 15%
+            (-6% per aging step)</p>
+          <p>Speed:2.75m/s (young)
+            -0.175 (per increment)
+            1m/s (max old)</p>
+          <p>Hidden Ability: Constantly Ages
+            Starts hyperactive and fast, becomes slower and less active over time
+          </p>
+          <p>Give Away: -</p>
+          <p> Exclude: Low Activity / Slow Hunt Speed early on</p>
+          <p>
+            Ability : Every 2 Minutes the ghost attempts to age when you are close, if not the timer will be increased by 30 seconds. Be in the ghost room to make him age.
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            Thaye (IPA: /θəjɛ́/, pronounced "thuh-yeh") are also known as sarai and tasei in Burmese (written သရဲ) are disembodied spirits in Myanmar folklore that have many forms at once, depending on the beholder. They come in the deep of the night and cause minor nuisances.
+            When The Mimic mimics a Thaye, it will choose a random age.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „Thaye have been known to rapidly age over time, even in the afterlife. From what we've learned, they seem to deteriorate faster while within the presence of the living.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Thaye</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Thaye.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">Becomes very active the first time a player gets nearby</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">The more time players spend near it, the quieter and slower it becomes</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/Orb.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/book.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  <script src="../phasmo-js/1-phasmo-ghosts-page.js"></script>
+  </body>
+</html>

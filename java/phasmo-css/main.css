@@ -1,0 +1,512 @@
+/*styles for 1-phasmo-project.html
+buttons might need px adjust
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.scroll-bar {
+  height: 100%;
+  width: 100%;
+  border: 1px solid gray;
+  font-family: 'GestaRegular', Arial, Helvetica, sans-serif;
+  overflow: auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.navigation-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+.navigation-top a {
+  text-decoration: none;
+}
+
+.navigation-top a img {
+  width: 100%;
+  height: 64px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  padding: 40px 120px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding: 24px;
+  margin-top: 60px;
+}
+
+.left,
+.right {
+  padding: 24px;
+  color: white;
+}
+
+.left {
+  width: 82%;
+}
+
+.right {
+  width: 18%;
+}
+
+.content {
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ccc;
+}
+
+.content .heading {
+  margin-bottom: 16px;
+}
+
+.content .subheading {
+  margin-bottom: 8px;
+}
+
+.content p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.list .ghosts-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.row .ghosts-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.list .ghosts-button img {
+  width: 64px;
+  height: 64px;
+}
+
+.row .ghosts-button img {
+  width: 64px;
+  height: 64px;
+}
+
+.background-container {
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  background-image: url(../phasmo-project-photos/background-p1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.phasmo-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 64px;
+  background-image: url(../phasmo-project-photos/Phasmophobia_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.backToMainPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 64px;
+  background-image: url(../phasmo-project-photos/Phasmophobia_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ghosts-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 30px 75px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  width: calc(33% - 16px);
+  transition: all .3s;
+}
+
+.ghosts-button:hover {
+  transform: scale(.95);
+}
+
+
+/* BUTTON PLACEMENT IN SECONDARY TABS CSS */
+
+.container-for-buttons {
+  margin-top: 100px;
+}
+
+.ghosts1-2 {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 15px 35px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.ghosts-speed1-2 {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 15px 35px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.ghosts-ability1-2 {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 15px 35px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.ghosts-hint1-2 {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 15px 35px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.ghosts-exclude1-2 {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 15px 35px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Spirit page  */
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #012e59;
+  background-color: #121212;
+}
+
+.info {
+  font-style: italic ;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #012e59;
+  padding: 12px 9px;
+}
+
+.title-wrapper span {
+  font-size: 24px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 8px;
+}
+
+.evidence {
+  display: flex;
+  flex-direction: column;
+}
+
+.evidence-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #012e59;
+  padding: 12px 9px;
+}
+
+.evidence-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.evidence-images {
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.evidence-images img {
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.image-container {
+  max-width: 100%;
+  margin: 0 10px;
+}
+
+.evidence-one {
+  margin-left: 12px;
+  margin-right: 10px;
+}
+
+.evidence-two {
+  margin-left:12px;
+  margin-right: 10px;
+}
+
+.evidence-three {
+  margin-left: 12px;
+  margin-right: 10px;
+}
+
+/* Wraith Page */
+
+.caption .strength {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 9px;
+  overflow: hidden;
+}
+
+.caption .strength-info {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Arial;
+  margin-right: auto;
+}
+
+.caption .ability {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.caption .ability-info {
+  border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 9px;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-color {
+  color: red;
+}
+
+/* Ghost-Speed */
+
+.speed-ghost-check-box {
+  color: white;
+}
+
+.ghost-speed-list {
+  color: white;
+}
+
+.ghost-speed-page-align {
+  margin-left: 50%;
+  color: white;
+}
+
+.highlight-ghost-name {
+  color: inherit; 
+  font-weight: bold;
+}
+
+
+.exclude-headline-1 {
+  display: table-cell;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  color: white;
+}
+
+.exclude-headline-1:after {
+  content: '';
+  border-top: 1px solid blue;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.exclude-headline-1 {
+  width: 100;
+  display: table;
+  text-align: center;
+}
+
+ .exclude-clue-buttons {
+  text-align: center;
+ }
+
+ .clue-button {
+  width:120px;
+  height:60px;
+  word-wrap: break-word;
+  line-height: 90px;
+  text-align: center;
+  background-color: transparent;
+  color: gray;
+  line-height: 60px;
+  margin-right: 60px;
+ }
+ 
+ .clue-button-s1 {
+  width:180px;
+  height:60px;
+  word-wrap: break-word;
+  line-height: 90px;
+  text-align: center;
+  background-color: transparent;
+  color: gray;
+  line-height: 60px;
+  margin-right: 60px;
+  margin-top: 5px;
+ }
+
+ .ghost-evidence-row {
+  display: flex;
+  text-align: center;
+ }
+
+ .ghost-evidence-arrangement {
+  color: white;
+margin-top: 20px;
+margin-left: auto;
+margin-left: 30px;
+margin-right: 50px;
+width:33%;
+border: 1px solid teal;
+padding: 35px;
+align-items: center;
+text-align: center;
+ }  
+
+
+ .clue-button.clicked {
+  background-color: yellow;
+ }

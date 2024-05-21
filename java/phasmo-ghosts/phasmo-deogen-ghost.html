@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Deogen</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Deogen:</h2>
+          <p>EVIDENCE: Spirit Box, Ghost Writing, DOTS</p>
+          <p>Hunt Threshold: 40% </p>
+          <p>Speed:3m/s (more than 2.5m away)
+            0.4m/s (less than 2.5m away) </p>
+          <p>Hidden Ability: Using the Spirit Box within 1m of him, will make him respond with a heavy breathing sound
+          </p>
+          <p>Give Away: GIGA FAST when you are hidden, omega slow when next to him</p>
+          <p> Exclude: -</p>
+          <p>
+            Ability : You CANNOT HIDE from this ghost, you will need to loop or kite it in the open.
+            Despite what some people have you believe, Deogens DO NOT enforce Spirit Box on Nightmare. 
+            <p><audio controls>
+              <source src="../phasmo-project-photos/Deogen_Breathing.mp3.mpeg" type="audio/ogg">
+            </audio></p>  
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            "Deogen" is a ghost from the Flemish (Belgian) late 18-century tale called De Ogen (Dutch for "the eyes", pronounced /de'oːɣən/). The tale is about a strange yellow-eyed fog haunting the Sonian Forest which likes to stalk its victims at night, moving slowly when being looked at and fast while being turned away from.
+            Because the Deogen always has line-of-sight with all players, most "safe spots" that take advantage of a lack of line-of-sight will not work, resulting in death. In fact, this may also result in the Deogen killing players through walls that are sufficiently thin.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „Sometimes surrounded by an endless fog, Deogen have been eluding ghost hunters for years.
+            These ghosts have been reported to find even the most hidden prey, before stalking them into exhaustion.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Deogen</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Deogen.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">Always knows where players are during a hunt.
+            Moves at a high speed with no player nearby</div>
+          </div>
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">Can produce a unique response through the Spirit Box</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Significantly slows down when near its target
+              Has a lower hunt sanity threshold</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/SpiritBox_Render.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/book.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  </body>
+</html>

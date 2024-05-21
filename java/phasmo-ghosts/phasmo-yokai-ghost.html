@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Yokai</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Yokai:</h2>
+          <p>EVIDENCE: Spirit box, Ghost Orb, Dots</p>
+          <p>Hunt Threshold:   50% (80% When someone talks close to them)</p>
+          <p>Speed: 1.7m/s (Normal increase)</p>
+          <p>Hidden Ability: - </p>
+          <p>Give Away:Unable to find you during a hunt despite active electric devices</p>
+          <p> Exclude: -</p>
+          <p>
+            Hunt: Yokais cannot hear voices or notice electrical devices unless they are in it's direct vicinity (2-3m).
+            Talking within 2-3m of them may trigger a hunt.        
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            In Japanese Folklore, Yokai (妖怪, or "strange apparition") is a term broadly encompassing unexplained phenomenons, supernatural apparitions or spirits, which can take a wide variety of forms going from animals to inanimate objects.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „Yokai are common ghosts that are attracted to human voices. They can usually be found haunting family homes.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Yokai</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Yokai.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">Talking near it will increase its chance of hunting and interaction rate</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Can only hear voices and detect electronics within a short range</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/SpiritBox_Render.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/Orb.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  <script src="../phasmo-js/1-phasmo-ghosts-page.js"></script>
+  </body>
+</html>

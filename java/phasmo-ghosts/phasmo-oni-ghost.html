@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Oni</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Oni:</h2>
+          <p>EVIDENCE:EMF5, Thermometer, DOTS</p>
+          <p>Hunt Threshold: 50%</p>
+          <p>Speed: 1.7m/s (NORMAL Speed)</p>
+          <p>Hidden Ability: Flickers less during Hunts.
+            Drains sanity during Ghost Events at twice the speed</p>
+          <p>Give Away: -
+          </p>
+          <p> Exclude: Mistball Ghost Event</p>
+          <p>
+            Hunt: Flickers less during hunts, is visible longer (opposite of Phantom).
+            Will more often appear in full form during an event. 
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            In Japanese folklore, an Oni (鬼) is a kind of demonic ogre or troll, and can be seen as a type of Yokai. They are usually portrayed as hulking figures with horns on their heads, sharp claws and tusks, an odd skin tone such as red, green, or blue, and carrying large iron clubs. In Phasmophobia, Oni do not reflect these depictions or their Japanese origin, and simply uses possible form of American ghost in both appearance and name due to sharing models and a naming pool with other ghost types.
+          </p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „Onis love to scare their victims as much as possible before attacking. They are often seen in their physical form, guarding their place of death.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Oni</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Oni.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">More active when people are nearby</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Cannot produce "airball" ghost events
+              Model remains visible for longer periods when hunting</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/emf.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/Thermo.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/DOTS_projector.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  </body>
+</html>

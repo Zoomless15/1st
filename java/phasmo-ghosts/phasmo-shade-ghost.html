@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Shade</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Shade:</h2>
+          <p>EVIDENCE: EMF5, Ghost Writing, Thermometer</p>
+          <p>Hunt Threshold: 35%</p>
+          <p>Speed:  1.7m/s (Normal increase) </p>
+          <p>Hidden Ability:Unable to do Throws, Ghost Events or Hunts when another player is in a room with her
+          Can Appear as Black Shadow in Summoning Circle
+          </p>
+          <p>Give Away: -</p>
+          <p> Exclude: Started Hunt / Event from the same room the player is currently in</p>
+          <p>
+            Hunt:Incredibly shy and inactive </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            Shade (lat. umbra, gr. σκιά) - in the mythology of many peoples, the ghost or spirit of the dead human, who is in the afterlife.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „A Shade is known to be very shy. There is evidence to suggest that a Shade will stop all paranormal activity if there are people nearby.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Shade</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Shade.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">Harder to find due to it being generally less active</div>
+          </div>
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">Produces hissing and shadowy form ghost events more often</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Has a low hunt sanity threshold
+              Generally unwilling to hunt and perform interactions in the presence of players</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/emf.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/book.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/Thermo.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  <script src="../phasmo-js/1-phasmo-ghosts-page.js"></script>
+  </body>
+</html>

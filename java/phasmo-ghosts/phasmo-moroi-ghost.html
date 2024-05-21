@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../phasmo-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Moroi</title>
+  </head>
+  <body class="background-container">
+  <div class="scroll-bar">
+    <div class="phasmo-logo">
+      <button
+        onclick="goToMainPage()"
+        class="backToMainPage"
+        title="Return to Main Page"
+      ></button>
+    </div>
+
+    <div class="centered-text">Welcome to Phasmophobia Quick Guide</div>
+    <div class="navigation fade-in">
+      <button onclick="goToGhostPage()" class="ghosts1-2">Ghosts</button>
+
+      <button onclick="goToGhostSpeed()" class="ghosts-speed1-2">
+        Ghosts Speed
+      </button>
+
+      <button onclick="goToGhostAbility()" class="ghosts-ability1-2">
+        Abilities
+      </button>
+
+      <button onclick="goToGhostHint()" class="ghosts-hint1-2">
+        Ghosts Hints
+      </button>
+
+      <button onclick="goToGhostExclude()" class="ghosts-exclude1-2">
+        Ghosts Exclusions
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="content">
+          <h2 class="heading">Moroi:</h2>
+          <p>EVIDENCE: Spirit Box, Ghost Writing, Thermometer</p>
+          <p>Hunt Threshold: 50% </p>
+          <p>Speed:1.5m/s (100% Sanity)  
+            2.25m/s (0% Sanity) 
+            max 3.71m/s with LoS and 0 Sanity</p>
+          <p>Hidden Ability:Hunt speed depends on player sanity when the hunt starts
+          </p>
+          <p>Give Away: Curse: Spirit Box or Paramic response will drop your sanity despite using a candle</p>
+          <p> Exclude: No Spirit Box Evidence</p>
+          <p>
+            Ability : Guarantees Spirit Box Evidence on Nightmare
+            Being cursed (Spirit Box, Paramic response) will double your sanity drain, while also ignoring the candle protection    
+          </p>
+          <h3 class="subheading">Trivia</h3>
+          <p>
+            The moroi (plural idem) are a type of vampires in Romanian folklore who practiced vampirism while being still alive (as opposed to strigoi who became vampires after death). In modern usage, moroi simply means "ghost" in Romanian.
+            The Moroi is the ghost with the fastest potential speed in the game.</p>
+          <h3 class="subheading">Lore</h3>
+          <p class="info">
+            „Moroi have risen from the grave to drain energy from the living. They have been known to place curses on their victims, curable only by antidotes or moving very far away.”
+          </p>
+          <p>—The Journal</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="info-wrapper">
+          <!-- Title -->
+          <div class="title-wrapper">
+            <span>Moroi</span>
+          </div>  
+          <!-- Image  -->
+          <div class="image-wrapper">
+            <img src="/phasmo-project-photos/Moroi.webp" alt="spirit">
+          </div>
+          <!-- info  -->
+          <div class="caption">
+            <div class="ability">Strength</div>
+            <div class="ability-info">Hunting speeds depend directly on average team sanity</div>
+          </div>
+          <div class="caption"> 
+            <div class="ability">Abilities</div>
+            <div class="ability-info">Can curse players through the spirit box or the parabolic microphone, making them lose sanity faster</div>
+          </div>
+          <div class="caption">
+            <div class="ability">Weakness(es)</div>
+            <div class="ability-info">Will be disoriented for longer when smudged during a hunt</div>
+        </div>  
+          <!-- Evidence -->
+          <div class="evidence">
+            <div class="evidence-title-wrapper">
+              <div class="evidence-title">Evidence</div>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <i id="up" class="fas fa-chevron-up" style="display: none;"></i>
+            </div>
+              <div class="evidence-images">
+                <div class="image-container">
+                <img src="/phasmo-project-photos/SpiritBox_Render.webp" alt="alt" class="evidence-one">
+                <img src="/phasmo-project-photos/book.webp" alt="alt" class="evidence-two">
+                <img src="/phasmo-project-photos/Thermo.webp" alt="alt" class="evidence-three">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="../phasmo-js/1-phasmo-project-java.js"></script>
+  </body>
+</html>
